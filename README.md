@@ -5,14 +5,15 @@ MLOps template | 🦄 | MIT | [![Badge example 1](https://github.com/sycod/conta
 # Todo
 
 - [x] HF Mistral API request
-- [ ] use / configure model locally with Ollama
+- [x] use / configure model locally with Ollama
 - [ ] fine-tune it
-- [ ] find a way to host Buddy -> o2switch ?
-- [ ] chatbot it with Telegram
+- [ ] host Buddy -> o2switch ?
+- [ ] chatbot with Discord
 
 # Sources
 
+- https://discord.com/developers/docs/quick-start/getting-started
 - dev in GH codespace then deploy API image to server
-- https://core.telegram.org/
-- https://python-telegram-bot.org/
 - [modèle Mixtral 8x7B de Hugging Face](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1), à utiliser en local avec Ollama
+
+Penser à `ollama serve` si besoin
