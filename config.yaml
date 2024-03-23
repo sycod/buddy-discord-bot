@@ -1,0 +1,7 @@
+headers:
+  "Content-Type": "application/json"
+  "Accept": "application/json"
+  "Authorization": "Bearer "
+
+# model: "mistral-tiny-2312"
+model: "mistral-small-2312"

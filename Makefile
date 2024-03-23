@@ -4,18 +4,9 @@ install:
 lint:
 	pylint --disable=R,C *.py
 
-test:
-	# --cov=my_function test_*.py for details on a function
-	# test_*.py → python tests files are prefixed as is
-	#  --disable-warnings, if needed
-	python -m pytest -vvv
-
 format:
-	# --force-exclude '<FILE_OR_FOLDER>' if needed (env, imported, models...)
-	black *.py *.ipynb
-
-all: install lint test format
+	black *.py
 
 # personal and not click-setup-installed commands
-api_launch:
-	python $(CURDIR)/blueprint_fast_api.py
+api:
+	python $(CURDIR)/api.py

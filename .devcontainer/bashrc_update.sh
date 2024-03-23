@@ -3,9 +3,6 @@
 #     apply once at the end of VM creation
 #     used in separate file because of quotes in echo command
 
-# activate Python virtual environment on startup
-echo "source ~/.env/bin/activate" >> ~/.bashrc
-
 # aliases
 echo "alias ll='ls -alF'" >> ~/.bashrc
 echo "alias cd_project='cd $PWD'" >> ~/.bashrc
