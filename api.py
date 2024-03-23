@@ -50,8 +50,9 @@ def run_bot():
 
         if message.channel.type == discord.ChannelType.private:
             await send_message(message, user_message, True)
-        elif user_message[0] == "@Buddy ":
-            user_message = user_message[6:]
+        elif user_message[0:7] == "@Buddy ":
+            user_message = user_message[7:]
+            print(f"USER MESSAGE : {user_message}")
             await send_message(message, user_message, True)
         elif "<@1219776032719241357>" in user_message:
             await send_message(message, user_message, False)
